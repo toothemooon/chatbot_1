@@ -1,9 +1,9 @@
 # from greet.py
 
-import greet
+import module_greet
 import hello
 
-greet.greet(greet.name, greet.second_name)
+module_greet.greet(module_greet.name, module_greet.second_name)
 hello.helloWorld()
 
 # Hello, Angela Davis!
