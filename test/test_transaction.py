@@ -1,16 +1,11 @@
-import unittest
+# test_transaction.py
+import sys
+import os
 
-class Transaction:
-    def __init__(self, number, funds, status="active"):
-        self.number = number
-        self.funds = funds
-        self.status = status
-    
-    def __repr__(self):
-        return f"Transaction({self.number}, {self.funds}, {self.status})"
-    
-    def __str__(self):
-        return f"Transaction({self.number}, {self.funds}, {self.status})"
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+
+import unittest
+from transaction import Transaction  # 👈 Import the class from your file
 
 class TestTransaction(unittest.TestCase):
     
