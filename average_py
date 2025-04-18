@@ -1,0 +1,13 @@
+def average_mark(*args):
+    total = 0
+    counter = 0
+    for n in args:
+        total += n
+        counter += 1
+        return total
+
+    average = total / counter
+    print(average)
+    round(average, 1)
+
+average_mark(1, )
